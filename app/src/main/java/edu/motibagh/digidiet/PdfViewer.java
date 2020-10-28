@@ -32,9 +32,10 @@ public class PdfViewer extends AppCompatActivity implements OnPageChangeListener
         s1 = extras.getString("class6");
         s2 = extras.getString("class7");
         s3 = extras.getString("class8");
-
-        if("class6".equals(s1)){
-            pdfView.fromAsset("class6.pdf")
+       Uri uri=Uri.parse("https://firebasestorage.googleapis.com/v0/b/digidiet-65be7.appspot.com/o/english%2Febook%2Fclass6.pdf?alt=media&token=fbe2c462-bf32-41d1-a503-581790a6e536");
+        if(1==1){
+            pdfView.fromUri(uri)
+            //pdfView.fromAsset("class6.pdf")
                     .pages(0, 2, 1, 3, 3, 3) // all pages are displayed by default
                     .enableSwipe(true) // allows to block changing pages using swipe
                     .swipeHorizontal(true)
@@ -55,7 +56,8 @@ public class PdfViewer extends AppCompatActivity implements OnPageChangeListener
                     .load();
         }
         if("class7".equals(s2)){
-            pdfView.fromAsset("class7.pdf")
+            pdfView.fromUri(uri)
+           // pdfView.fromAsset("class7.pdf")
                     .enableSwipe(true) // allows to block changing pages using swipe
                     .swipeHorizontal(true)
                     .enableDoubletap(true)
@@ -74,7 +76,8 @@ public class PdfViewer extends AppCompatActivity implements OnPageChangeListener
                     .load();
         }
         if("class8".equals(s3)){
-            pdfView.fromAsset("class8.pdf")
+            pdfView.fromUri(uri)
+           // pdfView.fromAsset("class8.pdf")
                     .enableSwipe(true) // allows to block changing pages using swipe
                     .swipeHorizontal(true)
                     .enableDoubletap(true)
@@ -93,8 +96,6 @@ public class PdfViewer extends AppCompatActivity implements OnPageChangeListener
                     .load();
         }
     }
-
-
 
     public void viewPdf(String urlString) {
 

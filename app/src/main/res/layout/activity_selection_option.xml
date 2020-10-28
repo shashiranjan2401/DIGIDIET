@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".ImpAnnouncement">
     <LinearLayout
         android:orientation="vertical"
         android:background="@drawable/bg"
         android:weightSum="10"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_weight="2"
             android:layout_width="match_parent"
@@ -25,19 +26,17 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:padding="14dp">
-
             <!-- Row 1 -->
             <!-- Column 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                android:layout_rowWeight="1.5"
+                android:layout_margin="12dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#FFFFFF">
                 <LinearLayout
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
@@ -45,16 +44,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:id="@+id/imageView1"
-                        android:src="@drawable/academic"
-                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/academics"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:paddingLeft="11dp"
+                        android:layout_margin="30dp"
+                        android:src="@drawable/academics" />
                     <TextView
-                        android:text="Me"
+                        android:text="ACADEMICS"
+                        android:paddingLeft="4dp"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -65,12 +67,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                android:layout_rowWeight="1.5"
+                android:layout_margin="12dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp">
                 <LinearLayout
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
@@ -82,12 +82,14 @@
                         android:src="@drawable/gallery"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
+                        android:layout_margin="30dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:text="Family"
+                        android:text="GALLERY"
+                        android:paddingLeft="15dp"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -99,12 +101,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                android:layout_rowWeight="1.5"
+                android:layout_margin="12dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp">
                 <LinearLayout
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
@@ -116,12 +116,13 @@
                         android:src="@drawable/contactus"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
+                        android:layout_margin="30dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:text="Lovely"
+                        android:text="CONTACT US"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -133,12 +134,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp" >
+                android:layout_rowWeight="1.5"
+                android:layout_margin="12dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp" >
                 <LinearLayout
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
@@ -150,12 +149,13 @@
                         android:src="@drawable/announcement"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
+                        android:layout_margin="30dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:text="Team"
+                        android:text="ANNOUNCEMENT"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -168,12 +168,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                android:layout_rowWeight="1.5"
+                android:layout_margin="12dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp">
                 <LinearLayout
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
@@ -185,9 +183,11 @@
                         android:src="@drawable/aboutus"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
+                        android:layout_margin="30dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:text="Friends"
+                        android:text="ABOUT US"
+                        android:paddingLeft="20dp"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -201,12 +201,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                android:layout_rowWeight="1.5"
+                android:layout_margin="12dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp">
 
                 <LinearLayout
                     android:layout_gravity="center_horizontal|center_vertical"
@@ -216,15 +214,17 @@
                     android:layout_height="wrap_content">
                     <ImageView
                         android:id="@+id/imageView6"
-                        android:src="@drawable/comingsoon"
+                        android:src="@drawable/library"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
+                        android:layout_margin="30dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:text="Calendars"
+                        android:text="DIGI LIBRARY"
+                        android:paddingLeft="5dp"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />

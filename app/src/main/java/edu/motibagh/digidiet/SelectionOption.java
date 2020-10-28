@@ -28,20 +28,16 @@ public class SelectionOption extends AppCompatActivity {
     ArrayList<Firebasecrud> mTargetData = new ArrayList<>();
     Firebasecrud firebasecrud= new Firebasecrud();
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initView();
         fetchDatafromFirebase();
     }
-
-
     private void initView() {
         gridView = (GridView) findViewById(R.id.gridLayout);
         setContentView(R.layout.activity_selection_option);
-        ImageView academics = (ImageView) findViewById(R.id.imageView1);
+        ImageView academics = (ImageView) findViewById(R.id.academics);
         ImageView announcement = (ImageView) findViewById(R.id.imageView2);
 
         academics.setOnClickListener(new View.OnClickListener() {
@@ -52,9 +48,7 @@ public class SelectionOption extends AppCompatActivity {
                 SelectionOption.this.startActivity(activityChangeIntent);
             }
         });
-
     }
-
     private void fetchDatafromFirebase() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
@@ -70,11 +64,9 @@ public class SelectionOption extends AppCompatActivity {
                     }
                     Log.e("TAG", "Data received:" + mTargetData.size());
                 }
-
                 if (mTargetData.size() > 0) {
                     setDataInDB();
                 }
-
                 }
             @Override
             public void onCancelled(DatabaseError databaseError) {
@@ -85,8 +77,6 @@ public class SelectionOption extends AppCompatActivity {
         };
         myRef.addListenerForSingleValueEvent(postListener);
     }
-
-
     private void setDataInDB() {
 //        new MyDatabase(this).clearTableData();
         for (Firebasecrud record : mTargetData) {
@@ -94,6 +84,4 @@ public class SelectionOption extends AppCompatActivity {
             new MyDatabase(this).addRecord(bookRecord);
         }
     }
-
-
 }

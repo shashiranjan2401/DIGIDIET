@@ -20,25 +20,18 @@ public class MainActivity extends AppCompatActivity implements MyAdapterInterfac
     private RecyclerView mRecyclerView;
     private TargetDataAdapter mAdapter;
     DownloadManagerCallback downloadManagerCallback;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         downloadManagerCallback = this;
-
         updateUI();
         initView();
     }
     private void initView() {
         mRecyclerView = findViewById(R.id.recyclerView);
         setUpRecyclerAdapter();
-
-
     }
-
-
     private void  setUpRecyclerAdapter() {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 
@@ -71,12 +64,10 @@ public class MainActivity extends AppCompatActivity implements MyAdapterInterfac
 
     }
     //fetch DB data from anywhere in APP
-
     public ArrayList<Firebasecrud> fetchAllDataFromDB(){
         ArrayList<Firebasecrud> list = (ArrayList<Firebasecrud>) new MyDatabase( this ).getAllRecord();
         return list;
     }
-
 
     public void updateUI() {
         final String subject = getIntent().getStringExtra("subject");
@@ -98,12 +89,10 @@ public class MainActivity extends AppCompatActivity implements MyAdapterInterfac
         setUpRecyclerAdapter();
     }
 
-
     @Override
     public void downloadCallback(int cellposition) {
         updateDataInList();
     }
-
     @Override
     public void imageButtonViewOnClick(View v, int position) {
     }

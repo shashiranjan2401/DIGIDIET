@@ -25,8 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#0C88F5"
-        android:paddingBottom="100dp"
-        android:src="@drawable/landingicon"
+        android:src="@drawable/backgroundimage"
         android:visibility="visible"
         tools:visibility="visible" />
 </RelativeLayout>

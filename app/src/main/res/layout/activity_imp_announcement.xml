@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".ImpAnnouncement">
 
     <LinearLayout
@@ -20,8 +21,8 @@
 
             <TextView
                 android:id="@+id/textGrid"
-                android:text="GRID LAYOUT"
-                android:textSize="34sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:textColor="@android:color/white"
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
@@ -63,13 +64,13 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/academic"
+                        android:src="@drawable/academics"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
-                        android:text="Me"
+                        android:text="ACADEMICS"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -255,13 +256,13 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/comingsoon"
+                        android:src="@drawable/library"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
-                        android:text="Calendars"
+                        android:text="DIGI LIBRARY"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
